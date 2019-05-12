@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>HTML5 Canvas粒子效果文字动画特效DEMO演示</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+  <audio id="music1" controls="controls" autoplay="autoplay" preload id="music1" hidden>
+      <source src="../music/洛少爷 - 勾指起誓 （甜味小少年ver）（Cover：ilem）.mp3" type="audio/ogg"/>
+        <source src="../music/洛少爷 - 勾指起誓 （甜味小少年ver）（Cover：ilem）.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+    </audio>
+<!--     <div class="pan">
+    <p><a href="../tuoian/表白.html">再给我一分钟</a></p>
+</div> -->
+<div style="text-align:center;clear:both;position:absolute;top:0;left:260px">
+</div>
+<canvas class="canvas"></canvas>
+
+<div class="help">?</div> 
+
+<div class="ui">
+  <input class="ui-input" type="text" />
+  <span class="ui-return">↵</span>
+</div>
+<div class="overlay">
+  <div class="tabs">
+    <div class="tabs-labels"><span class="tabs-label">Commands</span><span class="tabs-label">Info</span><span class="tabs-label">Share</span></div>
+
+    <div class="tabs-panels">
+      <ul class="tabs-panel commands">
+        <li class="commands-item"><span class="commands-item-title">Text</span><span class="commands-item-info" data-demo="Hello :)">Type anything</span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item"><span class="commands-item-title">Countdown</span><span class="commands-item-info" data-demo="#countdown 10">#countdown<span class="commands-item-mode">number</span></span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item"><span class="commands-item-title">Time</span><span class="commands-item-info" data-demo="#time">#time</span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item"><span class="commands-item-title">Rectangle</span><span class="commands-item-info" data-demo="#rectangle 30x15">#rectangle<span class="commands-item-mode">width x height</span></span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item"><span class="commands-item-title">Circle</span><span class="commands-item-info" data-demo="#circle 25">#circle<span class="commands-item-mode">diameter</span></span><span class="commands-item-action">Demo</span></li>
+
+        <li class="commands-item commands-item--gap"><span class="commands-item-title">Animate</span><span class="commands-item-info" data-demo="The time is|#time|#countdown 3|#icon thumbs-up"><span class="commands-item-mode">command1</span>&nbsp;|<span class="commands-item-mode">command2</span></span><span class="commands-item-action">Demo</span></li>
+      </ul>
+
+      <div class="tabs-panel ui-details">
+        <div class="ui-details-content">
+          <h1>love you</h1>
+          <p>
+          I love you <a href="" target="_blank">threethousand times</a><br/>
+            <a href="" target="_blank"></a> 
+          </p>
+
+        </div>
+      </div>
+
+      <div class="tabs-panel ui-share">
+        <div class="ui-share-content">
+          <h1>loving</h1>
+          <p>I love you threethousand times <em></em></p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="js/index.js"></script>
+  <div class="box">
+    <div class="left"></div>
+    <div class="right"></div>
+    <script src="../tuoian/jquery-1.12.1.min.js"></script>
+    <script src="../tuoian/snowfall.jquery.js"></script>
+    <script>
+        $(document).snowfall({
+            falkeCount:50//设置爱心数目
+        })
+    </script>
+</div>
+  <script language="javascript">   
+  function GoTo(){   
+    location.href="流星雨.html";   
+  }   
+    
+  setTimeout("GoTo()",52000);   
+  </script> 
+</body>
+
+</html>
