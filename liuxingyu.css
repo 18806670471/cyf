@@ -1,0 +1,155 @@
+/*
+* @Author: ³ÌÒË·å
+* @Date:   2019-05-12 10:39:02
+* @Last Modified by:   程宜峰
+* @Last Modified time: 2019-05-12 12:11:09
+*/
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+	background-color: #1c272e; 
+}
+
+body{
+	background: url(image/20168201537231786.jpg) no-repeat top left;
+	 background-size: cover;
+}
+
+.wrap{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform:rotateZ(45deg);
+}
+
+.start{
+	height: 2px;
+	background:linear-gradient(-45deg,#c7ecee,rgba(0,0,255,0));
+	position: absolute;
+	border-radius: 50%;
+	filter:drop-shadow(0 0 6px #c7ecee);
+	animation:scaling 3s ease-in-out infinite,moveTO 3s ease-in-out infinite;
+}
+
+.start:nth-child(1){
+	top:30%;
+	left: 25%;
+	animation-delay:6s;
+}
+.start:nth-child(2){
+	top:40%;
+	left: 30%;
+	animation-delay:5s;
+}
+.start:nth-child(3){
+	top:50%;
+	left: 35%;
+	animation-delay:2.8s;
+}
+.start:nth-child(4){
+	top:60%;
+	left: 40%;
+	animation-delay:2.5s;
+}
+.start:nth-child(5){
+	top:35%;
+	left: 35%;
+	animation-delay:3s;
+}
+.start:nth-child(6){
+	top:45%;
+	left: 25%;
+	animation-delay:2s;
+}
+.start:nth-child(7){
+	top:55%;
+	left: 25%;
+	animation-delay:1s;
+}
+.start:nth-child(8){
+	top:65%;
+	left:25%;
+	animation-delay:1.5s;
+}
+.start:nth-child(9){
+	top:65%;
+	left: 35%;
+	animation-delay:1.8s;
+}
+.start:nth-child(10){
+	top:60%;
+	left: 28%;
+	animation-delay:3.5s;
+}
+.start:nth-child(11){
+	top:60%;
+	left: 20%;
+	animation-delay:4s;
+}
+.start:nth-child(12){
+	top:50%;
+	left: 20%;
+	animation-delay:5.5s;
+}
+.start:nth-child(13){
+	top:55%;
+	left: 45%;
+	animation-delay:1.2s;
+}
+.start:nth-child(14){
+	top:45%;
+	left: 45%;
+	animation-delay:3.8s;
+}
+.start:nth-child(15){
+	top:38%;
+	left: 25%;
+	animation-delay:3.4s;
+}
+.start:nth-child(16){
+	top:40%;
+	left: 40%;
+	animation-delay:0.5s;
+}
+.start:nth-child(17){
+	top:50%;
+	left: 50%;
+	animation-delay:5.3s;
+}
+.start:nth-child(18){
+	top:70%;
+	left: 28%;
+	animation-delay:4s;
+}
+.start:nth-child(19){
+	top:60%;
+	left: 40%;
+	animation-delay:3s;
+}
+.start:nth-child(20){
+	top:40%;
+	left: 48%;
+	animation-delay:2s;
+}
+
+@keyframes scaling{
+	0%{
+		width: 0;
+	}
+	50%{
+		width: 100%;
+	}
+	100%{
+		width: 0;
+	}
+}
+
+@keyframes moveTO{
+	0%{
+		transform:translateX(0); 
+	}
+	100%{
+		teansform:translateX(300px);
+	}
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表白</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<body>	
+		<audio id="music1" controls="controls" autoplay="autoplay" preload id="music1" hidden>
+			<source src="../music/洛少爷 - 勾指起誓 （甜味小少年ver）（Cover：ilem）.mp3" />
+			<source src="朴树 - 平凡之路.mp3" />
+		</audio>
+<!--这里是音乐-->	
+	<div class="pan">
+		<p><a href="雪花.html">登录</a></p>
+	</div>
+	<div class="middle">
+		<div class="bar bar1"></div>
+		<div class="bar bar2"></div>
+		<div class="bar bar3"></div>
+		<div class="bar bar4"></div>
+		<div class="bar bar5"></div>
+		<div class="bar bar6"></div>
+		<div class="bar bar7"></div>
+		<div class="bar bar8"></div>
+		<div class="bar bar4"></div>
+		<div class="bar bar5"></div>
+		<div class="bar bar6"></div>
+		<div class="bar bar7"></div>
+		<div class="bar bar8"></div>
+		<div class="bar bar4"></div>
+		<div class="bar bar5"></div>
+		<div class="bar bar6"></div>
+		<div class="bar bar7"></div>
+		<div class="bar bar8"></div>
+	</div>
+	<div class="box">
+    <div class="left"></div>
+    <div class="right"></div>
+    <script src="jquery-1.12.1.min.js"></script>
+    <script src="snowfall.jquery.js"></script>
+    <script>
+        $(document).snowfall({
+            falkeCount:50//设置爱心数目
+        })
+    </script>
+</div>
+ 	<script type="text/javascript">
+ 		var audio = document.getElementById('music1');
+			$("#btn").bind("touchstart", function bf() {
+			if(audio !== null) {
+			//检测播放是否已暂停.audio.paused 在播放器播放时返回false.
+				alert(audio.paused);
+			if(audio.paused) {
+				audio.play(); //audio.play();// 这个就是播放
+			$("#btn").addClass("active")
+			} else {
+				audio.pause(); // 这个就是暂停
+			$("#btn").removeClass("active")
+			}
+		}
+	})
+ </script>
+</body>
+</html>
